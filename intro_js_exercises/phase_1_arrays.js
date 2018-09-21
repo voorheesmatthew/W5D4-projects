@@ -22,4 +22,18 @@ Array.prototype.twosum = function() {
   return result;
 };
 
-console.log(array.twosum());
+nested = [[1,2],[3,4],[5,6]];
+Array.prototype.transpose = function () {
+  let result = [];
+  for (let i = 0; i < this.length; i++) {
+    result.push([]);
+  }
+  for (let i = 0; i < this.length; i++) {
+    for (let j = 0; j < this.length; j++) {
+      result[j].push(this[i][j]);
+    }
+  }
+  return result;
+};
+
+// console.log(array.twosum());
